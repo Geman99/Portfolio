@@ -1,0 +1,1187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      (function () {
+        try {
+          var k = "portfolio-theme";
+          var s = localStorage.getItem(k);
+          var t =
+            s === "light" || s === "dark"
+              ? s
+              : window.matchMedia("(prefers-color-scheme: light)").matches
+                ? "light"
+                : "dark";
+          document.documentElement.setAttribute("data-theme", t);
+        } catch (e) {}
+      })();
+    </script>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <meta
+      name="description"
+      content="Geman Lal Sahu — Senior Software Engineer, Raipur, Chhattisgarh, India. ASP.NET Core, Angular, Azure, fintech. Portfolio and resume."
+    />
+    <title>Geman Lal Sahu | Senior Software Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>◆</text></svg>"
+    />
+  </head>
+  <body>
+    <div class="noise" aria-hidden="true"></div>
+    <div class="glow glow-1" aria-hidden="true"></div>
+    <div class="glow glow-2" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a href="#top" class="logo" id="top">◆ Geman Lal Sahu</a>
+      <nav class="nav" aria-label="Primary">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#internship">Internship</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#certificates">Certificates</a></li>
+          <li><a href="#awards">Awards</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#contact" class="nav-cta">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-util">
+        <button
+          type="button"
+          class="theme-toggle"
+          id="theme-toggle"
+          aria-label="Switch theme"
+          title="Theme"
+        >
+          <svg
+            class="theme-icon theme-icon-sun"
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            aria-hidden="true"
+          >
+            <circle cx="12" cy="12" r="4" />
+            <path
+              d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"
+            />
+          </svg>
+          <svg
+            class="theme-icon theme-icon-moon"
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            aria-hidden="true"
+          >
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+          </svg>
+        </button>
+        <button
+          type="button"
+          class="nav-toggle"
+          aria-label="Open menu"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-layout">
+          <div class="hero-photo-wrap reveal" data-reveal>
+            <div class="hero-photo-frame">
+              <img
+                src="assets/profile.png"
+                alt="Geman Lal Sahu — Software Engineer"
+                class="hero-photo"
+                width="560"
+                height="560"
+                decoding="async"
+                fetchpriority="high"
+              />
+            </div>
+          </div>
+          <div class="hero-inner">
+          <p class="eyebrow reveal" data-reveal>Available for Opportunities</p>
+          <h1 class="hero-title reveal" data-reveal>
+            <span class="name">Geman Lal Sahu</span>
+            <span class="hero-credentials"
+              >Software Engineer | .NET Specialist | Azure | Angular | Data
+              Pipelines (ADF)</span
+            >
+          </h1>
+          <div class="hero-summary reveal" data-reveal>
+            <p class="hero-lead">
+              Strong .NET Azure developer with 3+ years of experience building
+              scalable backend systems and high-performance REST APIs in
+              financial and insurance domains.
+            </p>
+            <p class="hero-lead">
+              Good working knowledge of Azure Cloud (AZ-204 Certified), Angular,
+              and database design, supporting cloud-based architectures.
+            </p>
+            <p class="hero-lead">
+              Hands-on experience with Azure Data Factory (ADF) for data
+              migration and pipeline implementation, ensuring smooth and reliable
+              data flow.
+            </p>
+          </div>
+          <div class="hero-actions reveal" data-reveal>
+            <a href="#experience" class="btn btn-primary">View experience</a>
+            <a href="#contact" class="btn btn-ghost">Get in touch</a>
+            <a
+              href="#"
+              data-link="resumePdf"
+              class="btn btn-ghost"
+              download="Geman_Resume.pdf"
+              >Download Resume</a
+            >
+          </div>
+          <dl class="hero-stats reveal" data-reveal>
+            <div>
+              <dt>Focus</dt>
+              <dd>APIs · Azure · Financial systems</dd>
+            </div>
+            <div>
+              <dt>Stack</dt>
+              <dd>.NET · Angular · SQL</dd>
+            </div>
+            <div>
+              <dt>Cert</dt>
+              <dd>Microsoft AZ-204</dd>
+            </div>
+            <div>
+              <dt>Location</dt>
+              <dd>Raipur, Chhattisgarh, India</dd>
+            </div>
+          </dl>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section about">
+        <div class="section-head reveal" data-reveal>
+          <h2>About</h2>
+          <p class="section-intro">
+            I design and deliver production-ready backends and responsive
+            frontends, with a strong bias toward security, observability, and
+            measurable performance.
+          </p>
+        </div>
+        <div class="about-grid">
+          <div class="card about-card reveal" data-reveal>
+            <h3>What I do</h3>
+            <p>
+              I build scalable web applications end to end: versioned REST
+              APIs, layered and clean architectures, RBAC, JWT auth, and
+              integrations with ledgers, notifications, and cloud data stores.
+            </p>
+          </div>
+          <div class="card about-card reveal" data-reveal>
+            <h3>How I work</h3>
+            <p>
+              Modern practices — validation, middleware, global error handling,
+              unit testing, code review, and CI/CD. I care about query
+              optimization, indexing, and async APIs that stay fast under load.
+            </p>
+          </div>
+          <div class="card about-card reveal" data-reveal>
+            <h3>Impact</h3>
+            <p>
+              Commission processing at scale (5K+ transactions monthly, 99.9%
+              accuracy), ~25% faster data paths after SQL/LINQ tuning, and full
+              audit traceability for critical financial events.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section skills">
+        <div class="section-head reveal" data-reveal>
+          <h2>Skills</h2>
+          <p class="section-intro">
+            Deep backend expertise with strong cloud and frontend coverage.
+          </p>
+        </div>
+        <div class="skill-groups">
+          <article class="skill-group card reveal" data-reveal>
+            <h3>Backend</h3>
+            <ul class="tags">
+              <li>C#</li>
+              <li>.NET Core</li>
+              <li>LINQ</li>
+              <li>Entity Framework Core</li>
+              <li>RESTful APIs</li>
+              <li>Unit Testing</li>
+            </ul>
+          </article>
+          <article class="skill-group card reveal" data-reveal>
+            <h3>Security</h3>
+            <ul class="tags">
+              <li>JWT Authentication</li>
+              <li>RBAC</li>
+              <li>Exception Handling</li>
+            </ul>
+          </article>
+          <article class="skill-group card reveal" data-reveal>
+            <h3>Databases</h3>
+            <ul class="tags">
+              <li>SQL Server</li>
+              <li>MySQL</li>
+              <li>MariaDB</li>
+              <li>Azure Cosmos DB</li>
+              <li>Query Optimization</li>
+              <li>Indexing</li>
+            </ul>
+          </article>
+          <article class="skill-group card reveal" data-reveal>
+            <h3>Cloud &amp; DevOps</h3>
+            <ul class="tags">
+              <li>Microsoft Azure</li>
+              <li>Azure DevOps</li>
+              <li>Azure Functions</li>
+              <li>CI/CD</li>
+              <li>Git</li>
+            </ul>
+          </article>
+          <article class="skill-group card reveal" data-reveal>
+            <h3>Frontend</h3>
+            <ul class="tags">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>Angular</li>
+            </ul>
+          </article>
+          <article class="skill-group card reveal" data-reveal>
+            <h3>Architecture</h3>
+            <ul class="tags">
+              <li>MVC</li>
+              <li>Clean Architecture</li>
+              <li>Layered Architecture</li>
+              <li>Microservices</li>
+              <li>Docker</li>
+            </ul>
+          </article>
+          <article class="skill-group card reveal" data-reveal>
+            <h3>Data Engineering</h3>
+            <ul class="tags">
+              <li>Azure Data Factory (ADF)</li>
+              <li>ETL Pipelines</li>
+              <li>Data Migration</li>
+              <li>SQL Query Optimization</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="experience" class="section experience">
+        <div class="section-head reveal" data-reveal>
+          <h2>Experience</h2>
+          <p class="section-intro">
+            Senior Software Engineer at Interbiz — delivery, scale, and
+            measurable impact across financial systems.
+          </p>
+        </div>
+        <article class="timeline">
+          <div class="timeline-marker reveal" data-reveal></div>
+          <div class="timeline-card card reveal" data-reveal>
+            <header class="timeline-card-head">
+              <div>
+                <h3>Senior Software Engineer</h3>
+                <p class="company">Interbiz Consulting Pvt. Ltd</p>
+              </div>
+              <div class="meta">
+                <span class="pill">04/2023 – Present</span>
+                <span class="pill pill-muted">Raipur</span>
+              </div>
+            </header>
+
+            <div class="exp-block reveal" data-reveal>
+              <p class="exp-block__label">Tech Used</p>
+              <ul class="exp-tech-tags" aria-label="Technologies used">
+                <li>.NET Core</li>
+                <li>C#</li>
+                <li>ASP.NET Core</li>
+                <li>SQL Server</li>
+                <li>Azure</li>
+                <li>Azure Data Factory (ADF)</li>
+                <li>Angular</li>
+                <li>LINQ</li>
+                <li>REST APIs</li>
+              </ul>
+            </div>
+
+            <div class="exp-block reveal" data-reveal>
+              <p class="exp-block__label">Key impact</p>
+              <div class="exp-impact-grid">
+                <div class="exp-impact-card">
+                  <span class="exp-impact-card__metric">~25%</span>
+                  <span class="exp-impact-card__title">Performance gain</span>
+                  <span class="exp-impact-card__desc"
+                    >SQL &amp; LINQ optimization</span
+                  >
+                </div>
+                <div class="exp-impact-card">
+                  <span class="exp-impact-card__metric">5K+</span>
+                  <span class="exp-impact-card__title">Transactions / month</span>
+                  <span class="exp-impact-card__desc">Commission engine</span>
+                </div>
+                <div class="exp-impact-card">
+                  <span class="exp-impact-card__metric">99.9%</span>
+                  <span class="exp-impact-card__title">Processing accuracy</span>
+                  <span class="exp-impact-card__desc"
+                    >Financial system reliability</span
+                  >
+                </div>
+                <div class="exp-impact-card">
+                  <span class="exp-impact-card__metric">0 loss</span>
+                  <span class="exp-impact-card__title">Data migration</span>
+                  <span class="exp-impact-card__desc">ADF pipelines</span>
+                </div>
+                <div class="exp-impact-card">
+                  <span class="exp-impact-card__metric">~70%</span>
+                  <span class="exp-impact-card__title">Less manual effort</span>
+                  <span class="exp-impact-card__desc"
+                    >Tax reporting automation</span
+                  >
+                </div>
+                <div class="exp-impact-card">
+                  <span class="exp-impact-card__metric">10+ · 3+</span>
+                  <span class="exp-impact-card__title"
+                    >Interns trained · developers mentored</span
+                  >
+                  <span class="exp-impact-card__desc"
+                    >Code quality, clean architecture &amp; backend best
+                    practices</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="exp-block exp-block--contrib reveal" data-reveal>
+              <p class="exp-block__label">Key contributions</p>
+              <ul class="bullet-list exp-contrib-list">
+                <li>
+                  Built scalable REST APIs using ASP.NET Core (.NET 6+) with
+                  validation and global error handling.
+                </li>
+                <li>
+                  Designed secure role-based access control (RBAC) with dynamic
+                  role switching.
+                </li>
+                <li>
+                  Improved performance by ~25% via SQL and LINQ optimization.
+                </li>
+                <li>
+                  Developed a commission engine handling 5K+ transactions/month
+                  with 99.9% accuracy.
+                </li>
+              </ul>
+              <div
+                class="exp-contrib-extra-wrap"
+                id="experience-contributions-extra"
+                hidden
+              >
+                <ul class="bullet-list exp-contrib-list exp-contrib-list--extra">
+                  <li>
+                    Implemented audit logging for financial events, ensuring
+                    traceability and compliance.
+                  </li>
+                  <li>
+                    Built Excel import/export with validation and error handling,
+                    plus a reusable notification service.
+                  </li>
+                  <li>
+                    Designed and executed ADF pipelines for data migration
+                    (MariaDB → SQL Server) with zero data loss.
+                  </li>
+                  <li>
+                    Refactored legacy systems to improve performance,
+                    maintainability, and code quality.
+                  </li>
+                  <li>
+                    Trained 10+ interns and mentored 3+ developers in code
+                    quality, clean architecture, and backend best practices;
+                    contributed to code reviews and sprint planning.
+                  </li>
+                </ul>
+              </div>
+              <button
+                type="button"
+                class="btn btn-ghost exp-contrib-toggle"
+                id="experience-toggle-more"
+                data-expand-toggle
+                data-expand-target="experience-contributions-extra"
+                aria-expanded="false"
+                aria-controls="experience-contributions-extra"
+              >
+                View more
+              </button>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section id="internship" class="section internship">
+        <div class="section-head reveal" data-reveal>
+          <h2>Internship</h2>
+          <p class="section-intro">
+            National Informatics Centre — building accessible public-service web
+            systems.
+          </p>
+        </div>
+        <article class="internship-card card reveal" data-reveal>
+          <header class="timeline-card-head">
+            <div>
+              <h3>Software Developer Intern</h3>
+              <p class="company">National Informatics Centre (NIC), Raipur</p>
+            </div>
+            <div class="meta">
+              <span class="pill">01/2023 – 05/2023</span>
+              <span class="pill pill-muted">Raipur</span>
+            </div>
+          </header>
+          <p class="internship-project-title">
+            Web Information System for Special Employment Exchange
+          </p>
+          <p class="internship-lead">
+            A web platform to support differently-abled users with centralized
+            access to employment, healthcare guidance, and government welfare
+            schemes.
+          </p>
+          <div class="exp-block exp-block--sheet">
+            <p class="exp-block__label">Tech Used</p>
+            <ul class="exp-tech-tags" aria-label="Internship technologies">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>PHP</li>
+              <li>MySQL</li>
+              <li>Bootstrap</li>
+              <li>AJAX</li>
+            </ul>
+          </div>
+          <h4 class="internship-subhead">Key features</h4>
+          <ul class="bullet-list">
+            <li>
+              <strong>Doctor consultation module</strong> — medical advice and
+              health-related information for users.
+            </li>
+            <li>
+              <strong>Job portal integration</strong> — government and private
+              listings tailored for disabled candidates.
+            </li>
+          </ul>
+          <div
+            class="internship-expand-extra"
+            id="internship-expand-extra"
+            hidden
+          >
+            <ul class="bullet-list">
+              <li>
+                <strong>Government schemes dashboard</strong> — current welfare
+                schemes and eligibility criteria.
+              </li>
+              <li>
+                <strong>Search and filtering</strong> — find relevant jobs and
+                schemes by need.
+              </li>
+              <li>
+                <strong>Responsive UI</strong> — usable across devices.
+              </li>
+            </ul>
+            <h4 class="internship-subhead">Technical contributions</h4>
+            <ul class="bullet-list">
+              <li>
+                Dynamic pages with <strong>PHP</strong> and
+                <strong>MySQL</strong> for application and data layers.
+              </li>
+              <li>
+                <strong>AJAX</strong> for asynchronous loading and smoother UX.
+              </li>
+              <li>
+                Responsive front end with <strong>HTML</strong>,
+                <strong>CSS</strong>, <strong>JavaScript</strong>, and
+                <strong>Bootstrap</strong>.
+              </li>
+              <li>
+                Relational database design for efficient storage and retrieval.
+              </li>
+            </ul>
+            <h4 class="internship-subhead">Impact</h4>
+            <ul class="bullet-list">
+              <li>
+                Improved access to employment and healthcare resources for
+                differently-abled users.
+              </li>
+              <li>
+                Consolidated services in one place, reducing reliance on
+                fragmented sources.
+              </li>
+            </ul>
+          </div>
+          <button
+            type="button"
+            class="btn btn-ghost exp-contrib-toggle internship-expand-btn"
+            data-expand-toggle
+            data-expand-target="internship-expand-extra"
+            aria-expanded="false"
+            aria-controls="internship-expand-extra"
+          >
+            View more
+          </button>
+          <div class="project-actions">
+            <button
+              type="button"
+              class="btn btn-ghost btn-sm"
+              data-arch-open="nic"
+              data-arch-title="NIC internship — system architecture"
+            >
+              View Architecture
+            </button>
+            <a
+              href="#"
+              data-link="internshipProject"
+              class="btn btn-ghost btn-sm"
+              target="_blank"
+              rel="noopener noreferrer"
+              >View project</a
+            >
+          </div>
+        </article>
+      </section>
+
+      <section id="projects" class="section projects">
+        <div class="section-head reveal" data-reveal>
+          <h2>Projects</h2>
+          <p class="section-intro">
+            Selected work that reflects architecture and security depth.
+          </p>
+        </div>
+        <article class="project-feature card reveal" data-reveal>
+          <div class="project-feature-body">
+            <span class="project-label">Featured</span>
+            <h3>Product Inventory Management System (PIMS)</h3>
+            <p>
+              Production-style API built with <strong>Clean Architecture</strong>
+              on <strong>.NET 8</strong>: versioned REST endpoints, JWT auth,
+              <strong>RBAC</strong>, <strong>Entity Framework Core</strong> with
+              SQL Server, <strong>Serilog</strong> logging, output caching, and
+              <strong>Swagger / OpenAPI</strong> documentation.
+            </p>
+            <div class="exp-block exp-block--sheet">
+              <p class="exp-block__label">Tech Used</p>
+              <ul class="exp-tech-tags" aria-label="PIMS technologies">
+                <li>.NET 8</li>
+                <li>Clean Architecture</li>
+                <li>EF Core</li>
+                <li>SQL Server</li>
+                <li>JWT</li>
+                <li>RBAC</li>
+                <li>Serilog</li>
+                <li>Swagger</li>
+                <li>API versioning</li>
+              </ul>
+            </div>
+            <h4 class="internship-subhead">Solution architecture</h4>
+            <ul class="bullet-list compact">
+              <li>
+                <strong>Pims.Domain</strong> — core entities, enums, and domain
+                models.
+              </li>
+              <li>
+                <strong>Pims.Application</strong> — contracts, DTOs, and business
+                logic abstractions.
+              </li>
+            </ul>
+            <div class="pims-expand-extra" id="pims-expand-extra" hidden>
+              <ul class="bullet-list compact">
+                <li>
+                  <strong>Pims.Infrastructure</strong> — EF Core
+                  <code>DbContext</code>, Identity integration, services, and JWT
+                  wiring.
+                </li>
+                <li>
+                  <strong>Pims.Api</strong> — ASP.NET Core Web API with versioned
+                  controllers, middleware, and configuration.
+                </li>
+              </ul>
+              <h4 class="internship-subhead">API surface</h4>
+              <ul class="bullet-list compact">
+                <li>
+                  <strong>Auth</strong> — <code>POST /api/v1/auth/login</code>
+                  issues JWTs; policies enforce roles on protected routes.
+                </li>
+                <li>
+                  <strong>Products</strong> — get by id, search/filter/paging,
+                  create (admin), and percentage or fixed price adjustments
+                  (admin).
+                </li>
+                <li>
+                  <strong>Categories</strong> — list and create (admin);
+                  many-to-many links to products.
+                </li>
+                <li>
+                  <strong>Inventory</strong> — low-stock queries, create records
+                  (admin), and <code>adjust</code> with typed transactions
+                  (addition, subtraction, audit).
+                </li>
+              </ul>
+              <h4 class="internship-subhead">Data model</h4>
+              <ul class="bullet-list compact">
+                <li>
+                  ASP.NET Identity tables for users and roles (e.g.
+                  Administrator, User); products with unique SKU; categories;
+                  product–category mapping; per-location inventory; transaction
+                  log for stock changes.
+                </li>
+                <li>
+                  EF Core migrations for schema evolution; SQL Server (LocalDB,
+                  Express, or full instance) via configurable connection strings.
+                </li>
+              </ul>
+              <h4 class="internship-subhead">Operations &amp; DX</h4>
+              <ul class="bullet-list compact">
+                <li>
+                  <code>dotnet restore</code>, <code>dotnet build</code>, EF tools
+                  (<code>dotnet ef migrations</code> /
+                  <code>database update</code>), <code>dotnet run</code> on the API
+                  host — documented in the repo.
+                </li>
+                <li>
+                  Interactive docs under <code>/swagger</code>; JWT configuration
+                  (issuer, audience, signing key, expiry) via
+                  <code>appsettings.json</code> — production keys should be strong
+                  and secret-managed.
+                </li>
+              </ul>
+            </div>
+            <button
+              type="button"
+              class="btn btn-ghost exp-contrib-toggle pims-expand-btn"
+              data-expand-toggle
+              data-expand-target="pims-expand-extra"
+              aria-expanded="false"
+              aria-controls="pims-expand-extra"
+            >
+              View more
+            </button>
+            <div class="project-actions">
+              <button
+                type="button"
+                class="btn btn-ghost btn-sm"
+                data-arch-open="pims"
+                data-arch-title="PIMS — solution architecture"
+              >
+                View Architecture
+              </button>
+              <a
+                href="#"
+                data-link="pimsRepo"
+                class="btn btn-ghost btn-sm"
+                target="_blank"
+                rel="noopener noreferrer"
+                >View on GitHub →</a
+              >
+            </div>
+          </div>
+          <div class="project-feature-aside" aria-hidden="true">
+            <div class="code-window">
+              <div class="code-dots">
+                <span></span><span></span><span></span>
+              </div>
+              <pre><code><span class="kw">POST</span> /api/v1/auth/login
+<span class="hdr">Content-Type:</span> application/json
+
+<span class="kw">POST</span> /api/v1/inventory/{id}/adjust
+<span class="hdr">Authorization:</span> Bearer ••••
+<span class="hdr">Body:</span> delta, type, reason</code></pre>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section id="education" class="section education">
+        <div class="section-head reveal" data-reveal>
+          <h2>Education</h2>
+          <p class="section-intro">
+            Academic foundation in mathematics, computer science, and
+            applications.
+          </p>
+        </div>
+        <div class="edu-grid">
+          <div class="card edu-card reveal" data-reveal>
+            <h3>Postgraduate</h3>
+            <p class="edu-title">Master of Computer Application</p>
+            <p class="edu-org">
+              <span class="edu-institution-highlight"
+                >National Institute of Technology, Raipur</span
+              >
+            </p>
+            <p class="edu-dates">12/2020 – 05/2023</p>
+          </div>
+          <div class="card edu-card reveal" data-reveal>
+            <h3>Undergraduate</h3>
+            <p class="edu-title">
+              Bachelor of Science (Mathematics &amp; Computer Science)
+            </p>
+            <p class="edu-org">
+              Pandit Ravishankar Shukla University, Raipur
+            </p>
+            <p class="edu-dates">04/2017 – 06/2020</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="certificates" class="section certificates">
+        <div class="section-head reveal" data-reveal>
+          <h2>Certificates</h2>
+          <p class="section-intro">
+            Industry credentials you can verify online.
+          </p>
+        </div>
+        <div class="edu-grid edu-grid-narrow">
+          <div class="card edu-card reveal" data-reveal>
+            <h3 class="cert-issuer-highlight">Microsoft</h3>
+            <p class="edu-title">AZ-204: Azure Developer Associate</p>
+            <p class="edu-org cert-issuer-line">
+              <span class="cert-issuer-name">Microsoft</span> Learn — verified
+              credential
+            </p>
+            <p class="edu-link">
+              <a
+                href="#"
+                data-link="az204Credential"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Verify on Microsoft Learn</a
+              >
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="awards" class="section awards">
+        <div class="section-head reveal" data-reveal>
+          <h2>Awards</h2>
+          <p class="section-intro">
+            Recognition from clients and leadership for delivery and impact.
+          </p>
+        </div>
+        <div class="edu-grid">
+          <div class="card edu-card reveal" data-reveal>
+            <h3>Interbiz Consulting</h3>
+            <p class="edu-title">Outstanding contribution</p>
+            <p class="edu-org">
+              Large-scale financial project — Interbiz Consulting Pvt. Ltd
+            </p>
+            <p class="edu-link">
+              <a
+                href="#"
+                data-link="awardFinancialProject"
+                target="_blank"
+                rel="noopener noreferrer"
+                >View certificate</a
+              >
+            </p>
+          </div>
+          <div class="card edu-card reveal" data-reveal>
+            <h3>Interbiz Consulting</h3>
+            <p class="edu-title">Appreciation for seamless data migration</p>
+            <p class="edu-org">Interbiz Consulting Pvt. Ltd</p>
+            <p class="edu-link">
+              <a
+                href="#"
+                data-link="awardDataMigration"
+                target="_blank"
+                rel="noopener noreferrer"
+                >View certificate</a
+              >
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="resume" class="section resume">
+        <div class="section-head reveal" data-reveal>
+          <h2>Resume</h2>
+          <p class="section-intro">
+            <strong>Download + quick view</strong> — PDF with experience,
+            skills, education, and certifications.
+          </p>
+        </div>
+        <div class="resume-panel card reveal" data-reveal>
+          <p class="resume-panel-lead">
+            Save a copy for applications or open the PDF in your browser.
+          </p>
+          <div class="resume-panel-actions">
+            <a
+              href="#"
+              data-link="resumePdf"
+              class="btn btn-primary"
+              download="Geman_Resume.pdf"
+              >Download PDF</a
+            >
+            <a
+              href="#"
+              data-link="resumeViewBrowser"
+              class="btn btn-ghost"
+              target="_blank"
+              rel="noopener noreferrer"
+              >View in browser</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact">
+        <div class="contact-inner card reveal" data-reveal>
+          <h2>Let’s build scalable and reliable systems</h2>
+          <p>
+            Open to .NET Azure Developer roles where backend quality and cloud
+            delivery matter.
+          </p>
+          <p>Feel free to connect.</p>
+          <ul class="contact-details">
+            <li>
+              <a href="#" data-link="email">gemanlal99@gmail.com</a>
+            </li>
+            <li>
+              <a href="#" data-link="phone">+91-6900254403</a>
+            </li>
+            <li class="contact-location">Raipur, Chhattisgarh, India</li>
+          </ul>
+          <div class="contact-links">
+            <a
+              href="#"
+              data-link="github"
+              class="btn btn-primary"
+              target="_blank"
+              rel="noopener noreferrer"
+              >GitHub</a
+            >
+            <a
+              href="#"
+              data-link="linkedin"
+              class="btn btn-ghost"
+              target="_blank"
+              rel="noopener noreferrer"
+              >LinkedIn</a
+            >
+            <a
+              href="#"
+              data-link="hackerrank"
+              class="btn btn-ghost"
+              target="_blank"
+              rel="noopener noreferrer"
+              >HackerRank</a
+            >
+            <a href="#" data-link="email" class="btn btn-ghost">Email</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div
+      class="arch-modal"
+      id="architecture-modal"
+      hidden
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="architecture-modal-title"
+    >
+      <button
+        type="button"
+        class="arch-modal__backdrop"
+        data-arch-close
+        tabindex="-1"
+        aria-label="Close"
+      ></button>
+      <div class="arch-modal__panel">
+        <header class="arch-modal__header">
+          <h2 id="architecture-modal-title" class="arch-modal__title"></h2>
+          <button
+            type="button"
+            class="arch-modal__close"
+            data-arch-close
+            aria-label="Close architecture diagram"
+          >
+            ×
+          </button>
+        </header>
+        <div class="arch-modal__body" id="architecture-modal-body"></div>
+      </div>
+    </div>
+
+    <template id="arch-content-pims">
+      <p class="arch-modal__lead">
+        Clean Architecture on .NET 8 — the <strong>domain</strong> sits at the
+        center; outer layers depend inward. Infrastructure implements
+        persistence and identity; the API hosts HTTP, JWT, and Swagger.
+      </p>
+      <figure class="arch-figure">
+        <svg
+          class="arch-svg"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 420 480"
+          aria-hidden="true"
+        >
+          <defs>
+            <marker
+              id="arch-arrow"
+              markerWidth="8"
+              markerHeight="8"
+              refX="4"
+              refY="4"
+              orient="auto-start-reverse"
+            >
+              <path d="M0,0 L8,4 L0,8 Z" class="arch-svg__arrowhead" />
+            </marker>
+          </defs>
+          <text x="210" y="22" class="arch-svg__label" text-anchor="middle">
+            External clients &amp; Swagger UI
+          </text>
+          <rect
+            x="40"
+            y="32"
+            width="340"
+            height="48"
+            rx="10"
+            class="arch-svg__box arch-svg__box--api"
+          />
+          <text x="210" y="62" class="arch-svg__text" text-anchor="middle">
+            Pims.Api — controllers, middleware, versioning
+          </text>
+          <line
+            x1="210"
+            y1="80"
+            x2="210"
+            y2="98"
+            class="arch-svg__line"
+            marker-end="url(#arch-arrow)"
+          />
+          <rect
+            x="40"
+            y="98"
+            width="340"
+            height="48"
+            rx="10"
+            class="arch-svg__box arch-svg__box--app"
+          />
+          <text x="210" y="128" class="arch-svg__text" text-anchor="middle">
+            Pims.Application — DTOs, services, contracts
+          </text>
+          <line
+            x1="210"
+            y1="146"
+            x2="210"
+            y2="164"
+            class="arch-svg__line"
+            marker-end="url(#arch-arrow)"
+          />
+          <rect
+            x="55"
+            y="164"
+            width="310"
+            height="56"
+            rx="10"
+            class="arch-svg__box arch-svg__box--domain"
+          />
+          <text x="210" y="198" class="arch-svg__text" text-anchor="middle">
+            Pims.Domain — entities, enums, core rules
+          </text>
+          <line
+            x1="210"
+            y1="220"
+            x2="210"
+            y2="238"
+            class="arch-svg__line"
+            marker-end="url(#arch-arrow)"
+          />
+          <rect
+            x="40"
+            y="238"
+            width="340"
+            height="52"
+            rx="10"
+            class="arch-svg__box arch-svg__box--infra"
+          />
+          <text x="210" y="270" class="arch-svg__text" text-anchor="middle">
+            Pims.Infrastructure — EF Core, Identity, JWT impl.
+          </text>
+          <line
+            x1="210"
+            y1="290"
+            x2="210"
+            y2="308"
+            class="arch-svg__line"
+            marker-end="url(#arch-arrow)"
+          />
+          <rect
+            x="40"
+            y="308"
+            width="340"
+            height="48"
+            rx="10"
+            class="arch-svg__box arch-svg__box--db"
+          />
+          <text x="210" y="338" class="arch-svg__text" text-anchor="middle">
+            SQL Server — data &amp; migrations
+          </text>
+        </svg>
+        <figcaption class="arch-figure__caption">
+          Request flow (solid): HTTP → application → domain. Infrastructure
+          implements interfaces consumed by inner layers.
+        </figcaption>
+      </figure>
+    </template>
+
+    <template id="arch-content-nic">
+      <p class="arch-modal__lead">
+        Classic <strong>server-rendered</strong> web stack with
+        <strong>AJAX</strong> for partial updates — browser UI talks to PHP
+        endpoints; PHP uses MySQL for persistence.
+      </p>
+      <figure class="arch-figure">
+        <svg
+          class="arch-svg arch-svg--nic"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 480 280"
+          aria-hidden="true"
+        >
+          <defs>
+            <marker
+              id="arch-arrow-nic"
+              markerWidth="8"
+              markerHeight="8"
+              refX="8"
+              refY="4"
+              orient="auto"
+            >
+              <path d="M0,0 L8,4 L0,8 Z" class="arch-svg__arrowhead" />
+            </marker>
+          </defs>
+          <rect
+            x="20"
+            y="40"
+            width="120"
+            height="100"
+            rx="12"
+            class="arch-svg__box arch-svg__box--client"
+          />
+          <text x="80" y="82" class="arch-svg__text" text-anchor="middle">
+            Browser
+          </text>
+          <text x="80" y="102" class="arch-svg__sub" text-anchor="middle">
+            HTML · CSS · JS · Bootstrap
+          </text>
+          <line
+            x1="140"
+            y1="90"
+            x2="188"
+            y2="90"
+            class="arch-svg__line"
+            marker-end="url(#arch-arrow-nic)"
+          />
+          <text x="164" y="78" class="arch-svg__note" text-anchor="middle">
+            AJAX
+          </text>
+          <rect
+            x="188"
+            y="40"
+            width="130"
+            height="100"
+            rx="12"
+            class="arch-svg__box arch-svg__box--php"
+          />
+          <text x="253" y="82" class="arch-svg__text" text-anchor="middle">
+            PHP
+          </text>
+          <text x="253" y="102" class="arch-svg__sub" text-anchor="middle">
+            Dynamic pages · validation
+          </text>
+          <line
+            x1="318"
+            y1="90"
+            x2="366"
+            y2="90"
+            class="arch-svg__line"
+            marker-end="url(#arch-arrow-nic)"
+          />
+          <text x="342" y="78" class="arch-svg__note" text-anchor="middle">
+            SQL
+          </text>
+          <rect
+            x="366"
+            y="40"
+            width="94"
+            height="100"
+            rx="12"
+            class="arch-svg__box arch-svg__box--mysql"
+          />
+          <text x="413" y="92" class="arch-svg__text" text-anchor="middle">
+            MySQL
+          </text>
+          <rect
+            x="188"
+            y="170"
+            width="272"
+            height="72"
+            rx="10"
+            class="arch-svg__box arch-svg__box--modules"
+          />
+          <text x="324" y="200" class="arch-svg__text" text-anchor="middle">
+            Modules (jobs, schemes, consultation, search)
+          </text>
+          <text x="324" y="222" class="arch-svg__sub" text-anchor="middle">
+            Shared layout · server-side routing
+          </text>
+          <path
+            d="M 253 140 L 253 168"
+            fill="none"
+            class="arch-svg__line"
+            marker-end="url(#arch-arrow-nic)"
+          />
+        </svg>
+        <figcaption class="arch-figure__caption">
+          User actions in the browser trigger AJAX calls; PHP handles business
+          and data access; MySQL stores jobs, schemes, and user-related data.
+        </figcaption>
+      </figure>
+    </template>
+
+    <footer class="site-footer">
+      <p>
+        © <span id="year"></span> Geman Lal Sahu · Senior Software Engineer ·
+        Raipur, Chhattisgarh, India · Deploy on GitHub Pages
+      </p>
+    </footer>
+
+    <script src="config/links.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
